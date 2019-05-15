@@ -31,4 +31,10 @@ function doWhileLoop(num) {
   do {
     console.log("I run once regardless.")
   } while (incrementVariable() < num)
+  return function maybeTrue() {
+    return Math.random() >= 0.5
+  }
+  do {console.log("I run once regardless.")} 
+  while (num.length === 0 && maybeTrue() < num); 
+  return num(10) 
 }
